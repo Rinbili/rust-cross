@@ -4,8 +4,6 @@ ENV RUSTUP_HOME=/usr/local/rustup
 ENV CARGO_HOME=/usr/local/cargo
 ENV PATH=/usr/local/cargo/bin:$PATH
 ENV RUST_VERSION=1.87.0
-ENV RUSTUP_DIST_SERVER=https://mirrors.ustc.edu.cn/rust-static
-ENV RUSTUP_UPDATE_ROOT=https://mirrors.ustc.edu.cn/rust-static/rustup
 
 RUN dpkg --add-architecture arm64&&rm -rf /etc/apt/sources.list.d/ubuntu.sources
 RUN echo '\n\
