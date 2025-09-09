@@ -24,4 +24,5 @@ RUN rustup target add \
   aarch64-pc-windows-gnullvm x86_64-pc-windows-gnullvm \
   x86_64-pc-windows-msvc
 RUN wget -qO- https://get.pnpm.io/install.sh | ENV="$HOME/.bashrc" SHELL="$(which bash)" bash -
+RUN source /root/.bashrc
 RUN pnpm env use --global 20
